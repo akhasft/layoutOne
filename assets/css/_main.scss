@@ -1,0 +1,407 @@
+//----------------------main-styling----------------------------
+
+
+    .site-main{
+        .site-banner{
+          background: url(../assets/home-banner.png);
+          background-position: 0 50%;
+          background-repeat: no-repeat;
+         
+          .site-title{
+            h3{
+                  padding-top: 35%;
+                  font-weight: 500;
+                 ::after{
+                    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: $title-color;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+                 }
+              }
+              h1{
+                  font-size: 5rem;
+              }
+              h4{
+                  font-size: 1.5rem;
+
+              }
+          }
+          .banner-image{
+              img{
+                  padding:7rem 0;
+                  width:90rem;
+              }
+          }
+        }
+    }
+
+
+    //----------------about-section starts------------------------
+.site-main{
+    .about-area{
+        padding:8rem 5rem;
+
+        .about-title{
+            h2{
+        >span{
+            display: block;
+            font:normal bold 49px /60px $roboto;
+            letter-spacing: 21px;
+        }
+            }
+            p{
+                padding:0.4rem 0;
+
+            }
+        }
+    }
+}
+
+
+
+
+    //----------------about-section ends------------------------
+
+    //-----------------brand-section starts--------------------------
+
+    .site-main{
+        .brand-area{
+            padding:1rem 20rem;
+            margin-bottom: 4rem;
+          .first-row
+          {
+            .col-lg-4{
+              display: flex;
+              justify-content: center;
+              
+
+              .single-brand{
+                  border:1px solid $border-color;
+                  text-align: center;
+                  padding:1.8rem 0;
+                  margin:0.9rem 0;
+                  width:180px;
+                  height:100px;
+                  cursor: pointer;
+                  transition: transform 0.4s ease;
+
+                  img{
+                      width:50%;
+
+                  }
+
+                  &:hover{
+                      box-shadow: $box-shadow;
+                      transform: scale(1.1);
+                      background:$primary-color;
+
+                      img{
+                          filter:brightness(0.15);
+                         
+                      }
+                  }
+              }
+              .single-brand-2{
+                border:1px solid $border-color;
+                text-align: center;
+                padding:1.8rem 0;
+                margin:0.9rem 0;
+                width:180px;
+                height:100px;
+                cursor: pointer;
+                transition: transform 0.4s ease;
+
+                img{
+                    width:50%;
+
+                }
+
+                &:hover{
+                    box-shadow: $box-shadow;
+                    transform: scale(1.1);
+                    background:$theme-color;
+
+                    img{
+                        filter:brightness(0.15);
+                       
+                    }
+                }
+            }
+            }
+
+
+        }
+        .experience-area{
+            padding-left: 1rem;
+
+            span{
+                display: block;
+            }
+
+            .years-area{
+                background:url(/assets/client-info-bg.png) no-repeat 45px 20px;
+                padding:2rem 0;
+                width:40rem;
+                height:18rem;
+                padding-left: 8rem;
+                position: relative;
+                .years{
+                    font:normal bold 84px /40px $roboto;
+                    color:$primary-color;
+                    z-index: 2;
+                   
+                }
+                h2{
+                    span{
+                        font: normal 600 22px /30px $roboto;
+                        
+                    }
+                }
+            }
+            .bg-panel{
+                position: absolute;
+              left:-190px;
+              top:0;
+              background:#e029290a;
+              width:400px;
+              height:400px;
+              margin-left: 340px;
+              z-index: -1;
+
+            }
+        }
+
+        .call-area{
+            padding-left:10rem;
+
+        }
+    }
+    }
+
+    //-----------------brand-section ends--------------------------
+
+
+
+
+    //-----------------services-section starts--------------------------
+     .site-main{
+         .services-area{
+             padding:7rem 2rem;
+
+             .service-title{
+                 padding:0 14rem;
+                 h1{
+                     font-size: 35px;
+                 }
+             }
+
+             .services{
+                 background:rgba(248,252,253,0.973);
+                 padding:2rem;
+                 width:16rem;
+                 margin:5rem 0.5rem;
+                 transition: box-shadow 0.7s ease;
+                 &:hover{
+                     box-shadow: $box-shadow;
+
+                 }
+             }
+         }
+     }
+
+
+    //-----------------services-section ends--------------------------
+
+
+    //-----------------project-section starts--------------------------
+      .site-main{
+          .project-area{
+              padding:4rem 0 !important;
+.button-group{
+              button{
+                  background:transparent;
+                  border:none;
+                  font:normal 500 16/1130px $roboto;
+                  text-transform: uppercase;
+                  padding:13px 10px;
+                  &:hover{
+                      background:$theme-color;
+                      color:$base-color;
+
+                  }
+              }
+              button+button{
+          margin-left: 3rem;
+
+              }
+            }
+
+            .grid{
+       padding-top: 4rem;
+          .our-project{
+              .img {
+                  a{
+                      &:hover{
+                          img{
+                              filter:brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+                          }
+                      }
+                  }
+              }
+              .title{
+                   h4{
+                       font:normal 700 25px/12px $roboto;
+                   }
+              }
+          }
+            }
+          }
+      }
+
+    //-----------------project-section ends--------------------------
+
+
+    //------------------------------client-area-section-- starts--------------------
+      .site-main{
+          .about-area{
+              .about-title{
+                  p{
+                      padding:1rem 7rem;
+                  }
+              }
+              .client{
+                  background:#efffff10;
+                  box-shadow:  $box-shadow;
+                  margin:3rem 0;
+
+                  .client-img{
+                      padding:2rem;
+                  }
+              .about-client{
+                  padding-top: 2rem;
+
+                  h4{
+                      font:normal 500 21px /20px $roboto;
+                  }
+                  p{
+                      font-size:14px;
+                  }
+              }
+              }
+
+              .owl-carousel{
+                  .owl-item{
+                      display: flex;
+                      justify-content: center;
+                      padding:0 1.5rem;
+                  }
+                 
+              }
+          }
+
+      }
+
+      //----------------owl-carousel dots----------------starts------
+    
+      .owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:$primary-color;}
+
+      //----------------owl-carousel dots----------------ends------
+
+
+
+
+      
+      
+    //------------------------------client-area-section ends----------------------
+
+
+    //------------------------------subscribe section starts---------------------
+
+      .site-main{
+          .subscribe-us-area{
+               .subscribe{
+                   background:url(/assets/subscribe-bg.png) no-repeat;
+                   padding:10rem 0;
+                   margin:3rem auto;
+                   .subscribe-title{
+                       h4{
+                           font:normal 700 30px /30px $roboto;
+                           color:$base-color;
+                       }
+                       p{
+                           color:whitesmoke;
+                           padding:1rem 4rem;
+                       }
+                   }
+                   form{
+                       .input-textbox{
+                       input{
+                           width:400px;
+                           padding:1.5rem 1rem;
+                           border:1px solid whitesmoke;
+                           background:transparent;
+                           color:$base-color;
+                           font:normal 500 17px/20px $roboto;
+                           ::placeholder{
+                               color:$base-color;
+                           }
+                        }
+                       }
+                       .btn-submit{
+                           button{
+                               background:$base-color;
+                               color:$title-color;
+                               padding:.7rem 2rem;
+
+                           }
+                       }
+                   }
+               }
+        }
+      }
+
+
+
+    //------------------------------subscribe section ends---------------------
+
+
+    //---------------------------------footer starts-----------------------------
+
+
+    footer{
+        padding:5rem 0;
+        background:url(/assets/footer-bg.png) no-repeat;
+
+        .social{
+            h5{
+                font:normal 500 23px /30px $roboto;
+
+            }
+            a{
+                i{
+                    font-size: 22px;
+                    padding:2rem;
+                    color:rgba(0, 0, 0, 0.301);
+                    &:hover{
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,689 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title-text {
+  font: normal bold 40px/72px "Roboto", cursive;
+}
+
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px "Roboto", cursive;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.primary-button {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: #fff;
+  -webkit-transition: background 0.6s ease;
+  transition: background 0.6s ease;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  border: 2px solid #4458dc;
+}
+
+.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: #000;
+}
+
+.secondary-button {
+  background: #fff;
+  -webkit-transition: background 0.6s ease;
+  transition: background 0.6s ease;
+  border-radius: 4px;
+  border: 1px solid #4458dc !important;
+  color: #000;
+  background-clip: padding-box;
+}
+
+.secondary-button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: #fff;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.para {
+  color: #777777;
+  font: normal 500 16px/25px "Roboto", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", cursive;
+}
+
+button:focus, button:active, button:hover, .btn:active, .btn:hover {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.title-h1 {
+  font: normal bold 39px/40px "Roboto", cursive;
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  z-index: 999;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "sofia";
+  src: url(../fonts/Sofia/Sofia-Regular.ttf);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header .main-menu .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+header .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+
+header .main-menu .nav-item .nav-link {
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.7rem;
+  color: #000;
+}
+
+header .main-menu .navbar-nav .active a {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+header .main-menu .navbar-nav a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-main .site-banner {
+  background: url(../assets/home-banner.png);
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3 ::after {
+  content: " ";
+  height: 2px;
+  width: 18vw;
+  background: #000;
+  display: inline-block;
+  margin-left: 5%;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+.site-main .about-area {
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  font: normal bold 49px/60px "Roboto", cursive;
+  letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title p {
+  padding: 0.4rem 0;
+}
+
+.site-main .brand-area {
+  padding: 1rem 20rem;
+  margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand {
+  border: 1px solid #201f1f17;
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand img {
+  width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #854fee;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand:hover img {
+  -webkit-filter: brightness(0.15);
+          filter: brightness(0.15);
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand-2 {
+  border: 1px solid #201f1f17;
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand-2 img {
+  width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand-2:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #4458dc;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand-2:hover img {
+  -webkit-filter: brightness(0.15);
+          filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area {
+  padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span {
+  display: block;
+}
+
+.site-main .brand-area .experience-area .years-area {
+  background: url(/assets/client-info-bg.png) no-repeat 45px 20px;
+  padding: 2rem 0;
+  width: 40rem;
+  height: 18rem;
+  padding-left: 8rem;
+  position: relative;
+}
+
+.site-main .brand-area .experience-area .years-area .years {
+  font: normal bold 84px/40px "Roboto", cursive;
+  color: #854fee;
+  z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area h2 span {
+  font: normal 600 22px/30px "Roboto", cursive;
+}
+
+.site-main .brand-area .experience-area .bg-panel {
+  position: absolute;
+  left: -190px;
+  top: 0;
+  background: #e029290a;
+  width: 400px;
+  height: 400px;
+  margin-left: 340px;
+  z-index: -1;
+}
+
+.site-main .brand-area .call-area {
+  padding-left: 10rem;
+}
+
+.site-main .services-area {
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .service-title {
+  padding: 0 14rem;
+}
+
+.site-main .services-area .service-title h1 {
+  font-size: 35px;
+}
+
+.site-main .services-area .services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  -webkit-transition: -webkit-box-shadow 0.7s ease;
+  transition: -webkit-box-shadow 0.7s ease;
+  transition: box-shadow 0.7s ease;
+  transition: box-shadow 0.7s ease, -webkit-box-shadow 0.7s ease;
+}
+
+.site-main .services-area .services:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.site-main .project-area {
+  width: 1200px !important;
+  padding: 4rem 0 !important;
+}
+
+.site-main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16/1130px "Roboto", cursive;
+  text-transform: uppercase;
+  padding: 13px 10px;
+}
+
+.site-main .project-area .button-group button:hover {
+  background: #4458dc;
+  color: #fff;
+}
+
+.site-main .project-area .button-group button + button {
+  margin-left: 3rem;
+}
+
+.site-main .project-area .grid {
+  padding-top: 4rem;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+  -webkit-filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+          filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.site-main .project-area .grid .our-project .title h4 {
+  font: normal 700 25px/12px "Roboto", cursive;
+}
+
+.site-main .about-area .about-title p {
+  padding: 1rem 7rem;
+}
+
+.site-main .about-area .client {
+  background: #efffff10;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  margin: 3rem 0;
+}
+
+.site-main .about-area .client .client-img {
+  padding: 2rem;
+}
+
+.site-main .about-area .client .about-client {
+  padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+  font: normal 500 21px/20px "Roboto", cursive;
+}
+
+.site-main .about-area .client .about-client p {
+  font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #854fee;
+}
+
+.site-main .subscribe-us-area .subscribe {
+  background: url(/assets/subscribe-bg.png) no-repeat;
+  padding: 10rem 0rem;
+  margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/30px "Roboto", cursive;
+  color: #fff;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+  width: 400px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: #fff;
+  font: normal 500 17px/20px "Roboto", cursive;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input :-ms-input-placeholder {
+  color: #fff;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input ::placeholder {
+  color: #fff;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+  background: #fff;
+  color: #000;
+  padding: .7rem 2rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: #fff;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+footer .social h5 {
+  font: normal 500 23px/30px "Roboto", cursive;
+}
+
+footer .social a i {
+  font-size: 22px;
+  padding: 2rem;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+footer .social a i:hover {
+  color: #854fee;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 400px !important;
+  }
+  header {
+    width: 500px !important;
+  }
+  header button {
+    margin-left: 100px !important;
+    margin-right: -100px !important;
+  }
+  .title-text {
+    line-height: 70px !important;
+  }
+  .desig {
+    line-height: 30px !important;
+  }
+  .site-banner {
+    width: 500px !important;
+    margin-bottom: 100px !important;
+  }
+  .site-banner img {
+    display: none !important;
+  }
+  .site-banner h1 {
+    font-size: 50px !important;
+  }
+  .site-banner .primary-button {
+    margin-bottom: 10px !important;
+  }
+  .site-main .brand-area,
+  .site-main .services-area .services-title,
+  .site-main .about-area {
+    padding: 3% 4%;
+  }
+  .site-title {
+    margin-left: 200px !important;
+  }
+  .about-area {
+    width: 500px !important;
+    margin-left: 150px !important;
+  }
+  .about-area p {
+    padding: 0 !important;
+  }
+  .brand-area {
+    width: 500px !important;
+    margin-left: 100px !important;
+    margin-top: 100px !important;
+  }
+  .brand-area .first-row {
+    margin-bottom: 100px !important;
+  }
+  .experience-area {
+    padding-left: 0 !important;
+  }
+  .experience-area .years-area {
+    padding-left: 0 !important;
+  }
+  .experience-area .bg-panel {
+    width: 300px !important;
+    left: -200px !important;
+    margin-left: 300px !important;
+  }
+  .services-area {
+    margin-left: 50px !important;
+    width: 500px !important;
+  }
+  .services-area .container .row {
+    margin-left: 50px !important;
+  }
+  .services {
+    width: 400px !important;
+    margin-left: -80px !important;
+    padding: 0.5rem !important;
+    margin-top: 1rem !important;
+  }
+  .project-area {
+    width: 500px !important;
+    margin-left: 130px !important;
+  }
+  .project-area h1 {
+    padding-bottom: 20px !important;
+  }
+  .project-area button {
+    padding: 0 !important;
+  }
+  .about-area .container-1 {
+    margin-left: -50px !important;
+  }
+  .about-area .carousel {
+    margin-left: -50px !important;
+  }
+  .subscribe-us-area {
+    width: 500px !important;
+    margin-left: 80px !important;
+  }
+  .subscribe-us-area .input-textbox input {
+    width: 300px !important;
+    margin-left: 60px !important;
+  }
+  .subscribe-us-area .btn-submit {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-flex: 4 !important;
+        -ms-flex-positive: 4 !important;
+            flex-grow: 4 !important;
+    margin-left: 180px !important;
+  }
+  footer {
+    width: 500px !important;
+    margin-left: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 1910px) {
+  .header_area .main-menu .navbar {
+    padding: 1rem;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar, .navbar-brand, .subscribe-title, h4, p, .services-area, .subscribe {
+    padding: 2% !important;
+    margin: 0% !important;
+  }
+  .site-title h1 {
+    font-size: 41px !important;
+  }
+  form .input-textbox input {
+    width: 15rem !important;
+  }
+  .services-area .services {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-area {
+    width: 1200px !important;
+    padding: 4rem 2rem !important;
+  }
+  .about-area .graph {
+    margin-left: -30px !important;
+  }
+  .about-area .about-title h2 span {
+    font-size: 31px !important;
+    letter-spacing: 10px !important;
+  }
+  .services-area {
+    width: 1200px !important;
+    margin-left: 50px !important;
+  }
+  .brand-area {
+    width: 1200px !important;
+  }
+  .brand-area .experience-area .years-area {
+    padding-left: 1%;
+    width: 49%;
+  }
+  .brand-area .experience-area .bg-panel {
+    margin-left: 30%;
+    width: 80%;
+  }
+  .brand-area .experience-area .call-area {
+    padding-left: 3%;
+  }
+  .subscribe-us-area {
+    width: 1200px !important;
+  }
+  .subscribe-us-area form {
+    width: 55% !important;
+  }
+  .subscribe-us-area .btn-submit {
+    margin-top: 22px !important;
+  }
+  .project-area .button-group button {
+    font: normal 500 18px/40px "Roboto", cursive;
+  }
+  .about-area .about-title p {
+    padding: 30px !important;
+  }
+  form .input-textbox input {
+    width: 20rem;
+    margin: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+//-------------start -navigation----------------
+
+header{
+    .main-menu{
+        .navbar-brand{
+            padding:0 2rem 0 5rem;
+        }
+        .navbar{
+           padding:1rem 20rem;
+
+        }
+        .nav-item{
+            .nav-link{
+                font-family: $roboto;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding:1.7rem;
+                color:$title-color;
+            }
+        }
+        .navbar-nav {
+			.active {
+				a {
+					background: $gradient-color;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+                   
+				}
+			}
+			a{
+                &:hover {
+                    background: $gradient-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;}
+            }
+			}
+		}
+    }
+
+
+
+
